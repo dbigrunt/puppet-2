@@ -1,0 +1,8 @@
+import 'ssh-keys'
+
+node ntepuppetmaster01 {
+}
+
+
+node ntebck01 {
+}
