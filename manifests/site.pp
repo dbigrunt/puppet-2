@@ -11,36 +11,54 @@ node ntepuppetmaster01 {
 
 node ntebck01 {
 	include ssh-keys
+	include rdiff-backup
+	include ntp
 }
 
 node ntenettest01 {
 	include ssh-keys
+        include rdiff-backup
+        include ntp
 }
 
 node ntemysql02 {
 	include ssh-keys
+        include rdiff-backup
+        include ntp
 }
 
 node ntewww07 {
 	include ssh-keys
+        include rdiff-backup
+        include ntp
 }
 
 node ntewww08 {
 	include ssh-keys
+        include rdiff-backup
+        include ntp
 }
 
 node ntewww09 {
 	include ssh-keys
+        include rdiff-backup
+        include ntp
 }
 
 node subversion {
 	include ssh-keys
+        include rdiff-backup
+        include ntp
 }
 
 node jira {
 	include ssh-keys
+        include rdiff-backup
+        include ntp
 }
 
 node jenkins {
 	include ssh-keys
+        include rdiff-backup
+        include ntp
 }
