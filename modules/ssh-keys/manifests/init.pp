@@ -23,7 +23,14 @@ ssh_authorized_key {'John Sverre Barli':
         type => 'ssh-rsa',
         user => 'root',
         }
-	
+
+ssh_authorized_key {'Per Aage Trapnes':
+        ensure => present,
+        key => 'AAAAB3NzaC1yc2EAAAABJQAAAIEAw3SGCQrfUFQYq9tn8ubRm7NOQ/u2kss9DnBeGLEBKcic58Uw16mY7skH6MVZc+yBP5h0zYQBzKur++kqgLEtsx478rqAyVx/jmD9XxLXRQoHvSSIJ9OoCKcuXdKXbfi9rV6CSsMleRHGpCIYpQ5ooTTcOSwanmnlyF2fdhkAo70=',
+        name => 'per.aa.trapnes',
+        type => 'ssh-rsa',
+        user => 'root',
+	}	
 
 }
 
