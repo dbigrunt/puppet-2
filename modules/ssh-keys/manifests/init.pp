@@ -15,6 +15,15 @@ ssh_authorized_key {'Bjarne Betjent':
 	type => 'ssh-rsa',
 	user => 'root',
 	}	
+
+ssh_authorized_key {'John Sverre Barli':
+        ensure => present,
+        key => 'AAAAB3NzaC1yc2EAAAABJQAAAQBmP4TLDaz0B7xf55RPWzstE/C8UCSMFroT8JcdlwYans3b3CRYis6hSgqvGW6/UJxh1LuRWwvI/CPU1gpxB5GMJZUVl+2gBO8UQXznuWqx/VTTNKl5m5knEY2fIimt57jpXSDCGE5PLJ66sOx21nj9+MPToHpeSUF6ObOI9D2pu7JTx9tLWaUIMl0dSHho8ec+XTVu1vX7rNFHC0FM+Ex9aUeDteHHhVdEYAAMVidCaRbcW1Ss8DUm+NvaMEDdiodscvMUQ3c1cwF/gzO29/nIUnhP63DFXm+7kz+2HIl04M5quP7A4WuC+lCvjHQbo5k9R/VuiDQh4flcnEg+Itcj',
+        name => 'john.s.barli',
+        type => 'ssh-rsa',
+        user => 'root',
+        }
 	
+
 }
 

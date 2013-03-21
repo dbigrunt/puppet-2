@@ -1,9 +1,11 @@
 import 'ssh-keys'
 import 'rdiff-backup'
+import 'ntp'
 
 node ntepuppetmaster01 {
 	include ssh-keys
 	include rdiff-backup
+	include ntp
 }
 
 
