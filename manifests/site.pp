@@ -6,6 +6,7 @@ node ntepuppetmaster01 {
 	include ssh-keys
 	include rdiff-backup
 	include ntp
+	include snmpd
 }
 
 
@@ -37,6 +38,7 @@ node ntewww08 {
 	include ssh-keys
         include rdiff-backup
         include ntp
+	include snmpd
 }
 
 node ntewww09 {
