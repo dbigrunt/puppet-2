@@ -1,7 +1,7 @@
 class snmpd(
   $ro_community = 'performancentero',
   $rw_community = 'private',
-  $ro_network = '10.0.0.0/0',
+  $ro_network = '0.0.0.0/0',
   $rw_network = '127.0.0.1',
   $location = 'VMware',
   $contact = 'IT-avdelinga'
