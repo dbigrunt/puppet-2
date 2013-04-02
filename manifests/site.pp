@@ -31,6 +31,7 @@ node ntewww07 {
 	include ssh-keys
         include rdiff-backup
         include ntp
+	include snmpd
 }
 
 node ntewww08 {
@@ -64,3 +65,9 @@ node jenkins {
         include rdiff-backup
         include ntp
 }
+
+
+node testy {
+
+}
+

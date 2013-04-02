@@ -32,5 +32,15 @@ ssh_authorized_key {'Per Aage Trapnes':
         user => 'root',
 	}	
 
+ssh_authorized_key {'Jan Einar Bjoru':
+        ensure => present,
+        key => 'AAAAB3NzaC1yc2EAAAABJQAAAQEAm5HKGY7k7kZlpUOS90LLgNw7idytZ2v6dk14PYab4BvwzecTDnDVrXS+rEPRvbT7POFhxbJglVS9lZiYTGnvn8H0juZGdMsQIo7GnV9RiQvDiYpv56HYtp4EYwquX4qPiZ+M4W6N5PW1QBlXY2cjWv0+TxBXn382nOhffTLcSjgasRfyzXU9vjXWUmfQeSKZhJTSXl3STZMxmJ+QnM/1TSqKjOPfBsJijsRfsHEg1c5mY5avqK4TipbUsMMTfTHkolUY6s+2qOpzKmkTlqrC6bVhXGQ6uSZX83lFWfH0r+zA3MSWVT+qkeyxAOEU8PMhu1gJ7BuY9I4ZlMZbpjbPGw==',
+        name => 'jan.einar.bjoru',
+        type => 'ssh-rsa',
+        user => 'root',
+        }
+
 }
+
+
 
