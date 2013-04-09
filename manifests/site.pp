@@ -66,8 +66,18 @@ node jenkins {
         include ntp
 }
 
-
 node testy {
-
+        include ssh-keys
+        include rdiff-backup
+        include snmpd
+	include ntp
 }
 
+node ntedevtst01 {
+	include rdiff-backup
+	include ssh-keys
+	include ntp
+}
+
+node puppetdemo {
+}

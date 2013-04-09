@@ -8,6 +8,15 @@ ssh_authorized_key {'Torgeir Arnoy':
 	user => 'root',
 	}
 
+ssh_authorized_key {'Torgeir Arnoy (linux)':
+        ensure => present,
+        key => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCuDXPh1ETLqf1cmGzFXp8mWdbdOSTqpbaXEOOOOzUwsmJQVyMPJd2U9t+UpVrjfkfvBPxzx9UOPrxgWpn7Q42nsg8xUAT41kn0AnfYZQOTZ5nynM7DQif5Pu3rpwbwcWTufrN0W5U82vZU6JlV0OEleWHWKq9YZ4s+BycWlyFNomq9ix9Ae/qYTxHF3BHWba6K2r/7LnZrNuP4NxmVLsUhRIc1Z3kMSzSatCKxCwA8J9mkYkQ8ChytwL2aclJTQFBZ1Y6f1307SqUH196Drpyr9NEP+qEkfZsLc4/OktFKucVaBFuKqHSe9/dow61vRHIKFYJVGL0YDGica4tzAVt9',
+        name => 'torgeir.arnoy.linux',
+        type => 'ssh-rsa',
+        user => 'root',
+        }
+
+
 ssh_authorized_key {'Bjarne Betjent':
 	ensure => absent,
 	key => 'YBVHGVasdsad787sdaJHBd',
@@ -40,7 +49,14 @@ ssh_authorized_key {'Jan Einar Bjoru':
         user => 'root',
         }
 
-}
+ssh_authorized_key {'Jorn Dyrkoren':
+        ensure => present,
+        key => 'AAAAB3NzaC1yc2EAAAABJQAAAQB/DkB4d/CkIgPyAlFfp7ymCZgf3Mp6DOHvC6Z1edGCCHJzqB1gmShJoG0ROgCtbYs1otDrkGmfUbphSY1tqx/btPig1SgbhaGnhz722yuyFg1fLXurm71Y9jV8RMYZrXQ1avOiNlbZ7to+UgkVxLON1WH1cKd17hdlxBuTFUi9U4KDR0Vyi5ieK4WXNLoi5E6LDE/Wus55r66GkyKRBnzL+cmrjlOcnCXDFik1x9QW6Bt+1owBhmncRUXAAw8rwlJBmV1Yk+EOd6DLRvn9VARYT6agSj62JXJeHr3sXnzfswIdQjThaY7EQG38GOKw87ST/PZ90X33w+vgbyKAi0rj',
+        name => 'Jorn Dyrkoren',
+        type => 'ssh-rsa',
+        user => 'root',
+        }
 
+}
 
 
